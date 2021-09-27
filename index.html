@@ -21,7 +21,7 @@
           ctx.fillStyle = "red";
          ctx.strokeStyle = 'none'
          ctx.lineWidth = 8;
-         ctx.lineCap = "round"
+         ctx.lineCap = "round" //每个线的末尾应该是圆的还是方的，默认是方
          
         function drawLine(x1,y1,x2,y2){
          ctx.beginPath();
@@ -30,7 +30,7 @@
          ctx.stroke();
         }
         
-        let painting = false
+        let painting = false //红绿灯  不是true就是false
         let last
 
         var isTouchDevice = 'ontouchstart' in
